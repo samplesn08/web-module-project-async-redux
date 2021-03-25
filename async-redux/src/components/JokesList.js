@@ -8,7 +8,7 @@ const JokesList = props => {
         event.preventDefault();
         props.getJokes();
     }; 
-    
+
     return (
         <div className='jokeList'>
             <h2>Random Jokes!</h2>
@@ -32,5 +32,6 @@ const mapStateToProps = state => ({
     error: state.error,
     isFetching: state.isFetching
 });
+
 
 export default connect(mapStateToProps, { getJokes })(JokesList);
