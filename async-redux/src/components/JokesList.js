@@ -7,7 +7,8 @@ const JokesList = props => {
     const fetchJokes = event => {
         event.preventDefault();
         props.getJokes();
-    };
+    }; 
+    
     return (
         <div className='jokeList'>
             <h2>Random Jokes!</h2>
